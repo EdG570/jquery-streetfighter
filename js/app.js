@@ -40,10 +40,11 @@ $(document).ready(function(){
         
     })
 
-    .keyup(function(){
-      $('.ryu-cool').hide();
-      $('.ryu-still').show();
-      $('#haters-sound')[0].pause();
+    $(document).on('keyup', function(e){
+      if(e.which == 88)
+        $('.ryu-cool').hide();
+        $('.ryu-still').show();
+        $('#haters-sound')[0].pause();
     });
       
     function playHadouken() {
