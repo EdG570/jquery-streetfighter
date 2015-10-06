@@ -42,26 +42,20 @@ $(document).ready(function(){
         if(playing === false){
         playHaters(); 
         }
-
+        
         playing = true;
       }
         
     })
 
-<<<<<<< HEAD
-    $(document).on('keyup', function(e){
-      if(e.which == 88)
-        $('.ryu-cool').hide();
-        $('.ryu-still').show();
-        $('#haters-sound')[0].pause();
-=======
+
     .keyup(function(){
       $('.ryu-cool').hide();
       $('.ryu-still').show();
       $('#haters-sound')[0].pause();
       $('body').css('background-color', '#000');
       playing = false;
->>>>>>> master
+
     });
       
     function playHadouken() {
