@@ -34,14 +34,15 @@ $(document).ready(function(){
       if(e.which == 88){
         $('.ryu-still').hide();
         $('.ryu-ready').hide();
-        $('.ryu-cool').show();
+        $('.ryu-cool').show();  
       }
-
+        
     })
 
     .keyup(function(){
       $('.ryu-cool').hide();
       $('.ryu-still').show();
+      $('#haters-sound')[0].pause();
     });
       
     function playHadouken() {
@@ -49,5 +50,14 @@ $(document).ready(function(){
       $('#hadouken-sound')[0].load();
       $('#hadouken-sound')[0].play();
     }
+
+    function playHaters() {
+      $('#haters-sound')[0].volume=0.5;
+      $('#haters-sound')[0].load();
+      $('#haters-sound')[0].play();
+      console.log('Running!!!');
+    }
+
+
 
 });
