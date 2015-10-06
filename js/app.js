@@ -34,7 +34,8 @@ $(document).ready(function(){
       if(e.which == 88){
         $('.ryu-still').hide();
         $('.ryu-ready').hide();
-        $('.ryu-cool').show();  
+        $('.ryu-cool').show();
+        playHaters(); 
       }
         
     })
